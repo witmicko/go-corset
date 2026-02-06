@@ -26,6 +26,7 @@ jobs:
       repo: ${{ github.repository }}
       scanner-ref: 'v2'
       paths-ignored: |
+        .security-scanner
         **/vendor/**
         **/*_test.go
         **/testdata/**
