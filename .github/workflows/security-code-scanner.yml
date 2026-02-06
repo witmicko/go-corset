@@ -24,9 +24,8 @@ jobs:
       security-events: write
     with:
       repo: ${{ github.repository }}
-      scanner-ref: 'v2'
+      scanner-ref: 'mogro-semgrepignore-update'
       paths-ignored: |
-        **/.security-scanner/**
         **/vendor/**
         **/*_test.go
         **/testdata/**
