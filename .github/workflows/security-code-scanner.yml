@@ -17,14 +17,14 @@ on:
 
 jobs:
   security-scan:
-    uses: MetaMask/action-security-code-scanner/.github/workflows/security-scan.yml@v2
+    uses: eloi010/action-security-code-scanner/.github/workflows/security-scan.yml@v2
     permissions:
       actions: read
       contents: read
       security-events: write
     with:
       repo: ${{ github.repository }}
-      scanner-ref: 'mogro-semgrepignore-update'
+      scanner-ref: 'main'
       paths-ignored: |
         **/vendor/**
         **/*_test.go
