@@ -17,7 +17,7 @@ on:
 
 jobs:
   security-scan:
-    uses: eloi010/action-security-code-scanner/.github/workflows/security-scan.yml@v2
+    uses: eloi010/action-security-code-scanner/.github/workflows/security-scan.yml@main
     permissions:
       actions: read
       contents: read
